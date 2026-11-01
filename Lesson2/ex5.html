@@ -1,42 +1,22 @@
-<!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <title>ร้านกาแฟแมวเหมียว</title>
-</head>
-<body>
-    <header>
-        <h1>ร้านกาแฟแมวเหมียว</h1>
-        <!-- 1. เมนูหลัก nav#main-nav -->
-        <nav id="main-nav">
-            <a href="menu.html">เมนู</a>
-            <a href="cats.html">แมวประจำร้าน</a>
-            <a href="contact.html">ติดต่อ</a>
-        </nav>
-    </header>
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#fbf5ef"><title>ร้านกาแฟแมวเหมียว | Lesson 2 EX 05 · PHP_7013</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=DM+Sans:wght@500;600;700;800&display=swap" rel="stylesheet"><style>
+:root{--bg:#fbf5ef;--ink:#412a20;--muted:#826f64;--peach:#cc8968;--border:#f0dfd3;--white:#fffdfb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:radial-gradient(ellipse at 10% 12%,#f9dfd2,transparent 38%),radial-gradient(ellipse at 92% 65%,#fae5d8,transparent 40%),var(--bg);font-family:Kanit,sans-serif;overflow-x:hidden}a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid var(--peach);outline-offset:4px}.wrap{max-width:1200px;width:calc(100% - 40px);margin:auto}
+nav{position:sticky;top:12px;z-index:5;margin-top:12px;background:#ffffffcf;backdrop-filter:blur(15px);border:1px solid white;border-radius:40px;box-shadow:0 10px 30px #79543b12;padding:15px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{font:800 24px 'DM Sans',sans-serif;white-space:nowrap}.brand span{color:#bf805e;margin-right:12px}.navlinks{display:flex;gap:8px;align-items:center}.navlinks a{border-radius:30px;padding:9px 16px;transition:.2s}.navlinks a:hover{background:#f7e5d8;transform:translateY(-2px)}.navlinks .current{background:#d59572;color:white}
+.hero{display:grid;grid-template-columns:170px 1fr 280px;align-items:center;gap:30px;padding:76px 0 64px}.avatar{height:160px;width:160px;display:grid;place-items:center;border-radius:50%;border:8px solid white;background:linear-gradient(140deg,#f8d4bf,#fff9f4);box-shadow:0 18px 35px #8e5b3c22;animation:float 5s ease-in-out infinite}.avatar span{font:800 70px 'DM Sans',sans-serif;color:#a86d4c}.chip{display:inline-block;border-radius:30px;padding:6px 18px;background:#f9dfcc;color:#81523a;font-weight:600}h1{font:800 clamp(46px,6vw,78px)/1.1 'DM Sans',sans-serif;letter-spacing:-2px;margin:15px 0}h1:after{content:'';display:block;width:190px;height:6px;background:#edbba4;border-radius:10px;margin-top:10px}.lead{font-size:20px;font-weight:600;margin:0 0 10px}.description{color:var(--muted);line-height:1.9;margin:0}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:23px}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:30px;background:linear-gradient(110deg,#e0a17c,#be7957);color:white;padding:11px 19px;box-shadow:0 8px 18px #bf795533;transition:transform .25s,box-shadow .25s}.btn:hover{transform:translateY(-4px);box-shadow:0 14px 25px #bf795544}.btn.alt{background:#fffaf5;border:1px solid #e9d5c8;color:#85553c;box-shadow:none}
+.art{height:240px;position:relative;display:grid;place-items:center;animation:float 6s ease-in-out infinite .4s}.art:before{content:'';position:absolute;inset:4px;border:2px solid #edd0bd;border-radius:50%}.screen{height:155px;width:235px;border:9px solid #e9c6b2;border-radius:18px;background:linear-gradient(140deg,#d9a48a,#ad7867);display:grid;place-items:center;box-shadow:0 20px 25px #68422b22;position:relative}.screen:after{content:'';position:absolute;bottom:-24px;left:-22px;width:260px;height:17px;background:#e8cbb9;border-radius:0 0 20px 20px}.screen span{font:800 56px 'DM Sans',sans-serif;color:white}.floating-tag{position:absolute;padding:8px 12px;background:#fff;border-radius:12px;box-shadow:0 8px 25px #79543b22;font:700 15px 'DM Sans',sans-serif}.htmltag{left:0;top:42px;color:#d58d5d}.phptag{right:0;top:10px;color:#8577bb}
+.layout{display:grid;grid-template-columns:355px 1fr;gap:26px;margin-bottom:40px}.panel{padding:25px;border-radius:26px;border:1px solid var(--border);background:#fffdfaaf;box-shadow:0 16px 35px #76503814;backdrop-filter:blur(8px)}h2{font-size:23px;margin:0 0 20px}.info{border-radius:18px;background:#ffffffb8;padding:7px 17px}.info div{display:grid;grid-template-columns:85px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid #f1e4db;font-size:14px}.info div:last-child{border:0}.info a{text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.lessons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.lesson{position:relative;overflow:hidden;background:#fffdfbdc;border:1px solid var(--border);border-radius:23px;padding:24px;transition:transform .3s,box-shadow .3s}.lesson:hover{transform:translateY(-8px);box-shadow:0 20px 35px #8e5b3c24}.lesson:after{content:'';position:absolute;right:-40px;bottom:-50px;width:115px;height:115px;border-radius:50%;background:#f9dfcb;pointer-events:none}.lesson:nth-child(2):after{background:#e9dafa}.lesson-icon{height:62px;width:62px;border-radius:20px;background:#fbe8dc;display:grid;place-items:center;color:#b87a56;font:700 22px 'DM Sans',sans-serif}.lesson:nth-child(2) .lesson-icon{background:#f0e7fc;color:#8d72b7}.lesson h3{font:800 26px 'DM Sans',sans-serif;margin:17px 0 6px}.lesson p{color:var(--muted);font-size:14px;min-height:55px;margin:0 0 12px}.files{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:18px}.files a{position:relative;z-index:1;background:#f9eee5;border-radius:9px;padding:7px 10px;font:700 12px 'DM Sans',sans-serif;transition:background .2s}.files a:hover{background:#eccbb5}.lesson:nth-child(2) .files a{background:#f2ebf9}.lesson:nth-child(2) .files a:hover{background:#e4d6f5}.lesson .btn{position:relative;z-index:1;padding:9px 17px;font-size:14px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:38px}.feature{display:flex;align-items:center;gap:15px}.feature b{display:block}.feature small{color:var(--muted)}.feature-icon{height:54px;width:54px;border-radius:50%;display:grid;place-items:center;background:#f8e4d5;font-size:27px}footer{text-align:center;border-top:1px solid var(--border);padding:25px;color:var(--muted);font-size:13px}
+.reveal{animation:rise .8s both}.d1{animation-delay:.15s}.d2{animation-delay:.3s}@keyframes rise{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}@keyframes float{50%{transform:translateY(-11px)}}
+@media(max-width:960px){.hero{grid-template-columns:150px 1fr}.art{display:none}.layout{grid-template-columns:1fr}}
+@media(max-width:650px){.wrap{width:calc(100% - 28px)}nav{padding:14px;flex-wrap:wrap;justify-content:center}.navlinks{width:100%;justify-content:center;gap:2px}.navlinks a{font-size:12px;padding:7px 9px}.hero{grid-template-columns:1fr;justify-items:center;text-align:center;padding:40px 0}.avatar{height:130px;width:130px}.avatar span{font-size:55px}h1:after{margin:12px auto}.lead{font-size:17px}.description{font-size:14px}.actions{justify-content:center}.panel{padding:19px}.lessons,.features{grid-template-columns:1fr}.features{gap:14px}.lesson p{min-height:0}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 
-    <main>
-        <p>กาแฟดี แมวน่ารัก เปิดทุกวัน 9 โมงถึง 6 โมงเย็น</p>
-    </main>
-
-    <footer>
-        <!-- 2. site map ทั้งต้นไม้ nav#sitemap -->
-        <nav id="sitemap">
-            <ul>
-                <li><a href="index.html">หน้าแรก</a>
-                    <ul>
-                        <li><a href="menu.html">เมนู</a>
-                            <ul>
-                                <li><a href="menu.html#drinks">เครื่องดื่ม</a></li>
-                                <li><a href="menu.html#bakery">ขนม</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="cats.html">แมวประจำร้าน</a></li>
-                        <li><a href="contact.html">ติดต่อ</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </footer>
-</body>
-</html>
+.exercise-head{padding:62px 0 28px}.exercise-head h1{font-family:Kanit,sans-serif;font-size:clamp(38px,5vw,62px)}.exercise-head .description{max-width:770px}.cafe-layout{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:24px;margin-bottom:45px}.cafe-layout .panel{min-width:0}.cafe-icon{height:65px;width:65px;display:grid;place-items:center;border-radius:20px;background:#fbe8dc;font-size:32px;margin-bottom:18px;animation:float 5s ease-in-out infinite}.cafe-nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.cafe-nav a{padding:10px 15px;border-radius:14px;background:#f9eee5;color:#81523a;transition:transform .2s,background .2s}.cafe-nav a:hover{background:#eccbb5;transform:translateY(-3px)}.sitemap-tree,.sitemap-tree ul{list-style:none;padding-left:21px;margin:9px 0;border-left:2px solid #e8cbb9}.sitemap-tree>li{padding-left:0}.sitemap-tree li{margin:10px 0}.sitemap-tree a{color:#81523a;text-decoration:underline;text-underline-offset:3px}.sitemap-tree a:hover{color:#b46c49}.exercise-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}@media(max-width:850px){.cafe-layout{grid-template-columns:1fr}}</style></head><body>
+<nav class="wrap" aria-label="เมนูหลักของเว็บไซต์บทเรียน"><a href="../index.html" class="brand"><span aria-hidden="true">&lt;/&gt;</span>PHP_7013</a><div class="navlinks"><a href="../index.html">⌂ หน้าหลัก</a><a href="../index.html#lesson1">Lesson 1</a><a class="current" href="../index.html#lesson2">Lesson 2</a><a href="https://github.com/WaySpaceOrg/PHP_7013" target="_blank" rel="noopener noreferrer">↗ GitHub</a></div></nav>
+<main class="wrap"><header class="exercise-head reveal"><span class="chip">✦ Lesson 2 / Exercise 05</span><h1>ร้านกาแฟแมวเหมียว ☕</h1><p class="lead">กาแฟดี แมวน่ารัก เปิดทุกวัน 9 โมงถึง 6 โมงเย็น</p><p class="description">แบบฝึกหัด HTML เรื่องเมนูนำทางและแผนผังเว็บไซต์ (Sitemap) พร้อมดีไซน์ Creamy Clean เหมือนหน้า Index</p><div class="actions"><a class="btn" href="../index.html#lesson2">← ย้อนกลับไปหน้า Index</a><a class="btn alt" href="ex4.html">← EX 04</a><a class="btn alt" href="ex6.html">EX 06 →</a></div></header>
+<div class="cafe-layout"><section class="panel reveal d1" aria-labelledby="cafe-title"><div class="cafe-icon" aria-hidden="true">🐈</div><h2 id="cafe-title">ยินดีต้อนรับสู่ร้านกาแฟแมวเหมียว</h2><p class="description">กาแฟดี แมวน่ารัก เปิดทุกวัน 9 โมงถึง 6 โมงเย็น</p><h2 style="margin-top:30px">▱ เมนูหลักของร้าน</h2><nav id="main-nav" class="cafe-nav" aria-label="เมนูหลักของร้านกาแฟ"><a href="menu.html">เมนู</a><a href="cats.html">แมวประจำร้าน</a><a href="contact.html">ติดต่อ</a></nav></section>
+<section class="panel reveal d2" aria-labelledby="sitemap-title"><h2 id="sitemap-title">▤ แผนผังเว็บไซต์ (Sitemap)</h2><nav id="sitemap" aria-label="แผนผังเว็บไซต์ร้านกาแฟ"><ul class="sitemap-tree"><li><a href="index.html">หน้าแรก</a><ul><li><a href="menu.html">เมนู</a><ul><li><a href="menu.html#drinks">เครื่องดื่ม</a></li><li><a href="menu.html#bakery">ขนม</a></li></ul></li><li><a href="cats.html">แมวประจำร้าน</a></li><li><a href="contact.html">ติดต่อ</a></li></ul></li></ul></nav></section></div>
+<div class="actions" style="margin-bottom:45px"><a class="btn" href="../index.html#lesson2">← ย้อนกลับไปยังบทเรียน</a><a class="btn alt" href="ex6.html">แบบฝึกหัดถัดไป →</a></div></main>
+<footer>© <span id="year">2026</span> PHP_7013 · WaySpaceOrg · Made for learning ♡</footer><script>document.getElementById('year').textContent=new Date().getFullYear()</script></body></html>

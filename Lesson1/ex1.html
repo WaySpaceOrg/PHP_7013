@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="utf-8">
-  <title>ประวัติส่วนตัว</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fbf5ef">
+<title>Lesson 1 · EX 01 | PHP_7013</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=DM+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#412a20;--muted:#826f64;--peach:#cc8968;--line:#f0dfd3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--ink);background:radial-gradient(ellipse at 10% 12%,#f9dfd2,transparent 38%),radial-gradient(ellipse at 92% 65%,#fae5d8,transparent 40%),#fbf5ef;font-family:Kanit,sans-serif}a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid var(--peach);outline-offset:4px}.wrap{max-width:1050px;width:calc(100% - 36px);margin:auto}
+nav{position:sticky;top:12px;z-index:5;margin-top:12px;background:#ffffffd6;backdrop-filter:blur(15px);border:1px solid white;border-radius:40px;box-shadow:0 10px 30px #79543b12;padding:15px 26px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font:800 23px 'DM Sans',sans-serif}.brand span{color:#bf805e;margin-right:10px}.navlinks{display:flex;gap:9px;align-items:center}.navlinks a{border-radius:30px;padding:9px 15px;transition:background .2s,transform .2s}.navlinks a:hover{background:#f7e5d8;transform:translateY(-2px)}.navlinks .active{background:#d59572;color:white}
+main{padding:65px 0 70px}.eyebrow{display:inline-block;border-radius:30px;padding:7px 17px;background:#f9dfcc;color:#81523a;font-weight:600}h1{font:800 clamp(35px,5vw,58px)/1.15 'DM Sans',sans-serif;letter-spacing:-1px;margin:18px 0 10px}.intro{color:var(--muted);margin:0 0 30px}.card{border-radius:28px;border:1px solid var(--line);background:#fffdfbdc;box-shadow:0 18px 40px #76503819;padding:clamp(22px,5vw,45px);backdrop-filter:blur(9px)}.profile-icon{width:70px;height:70px;display:grid;place-items:center;border-radius:23px;background:#fbe8dc;color:#b87a56;font:800 32px 'DM Sans',sans-serif;animation:float 5s ease-in-out infinite}.card h2{font-size:25px;margin:20px 0 12px}.details{padding:12px 20px;border-radius:17px;background:#fff9f5}.details p{padding:12px 0;margin:0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}.details p:last-child{border-bottom:0}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;gap:8px;border-radius:30px;background:linear-gradient(110deg,#e0a17c,#be7957);color:white;padding:12px 21px;box-shadow:0 8px 18px #bf795533;transition:transform .25s,box-shadow .25s}.btn:hover{transform:translateY(-4px);box-shadow:0 14px 25px #bf795544}.btn.alt{background:#fffaf5;border:1px solid #e9d5c8;color:#85553c;box-shadow:none}.reveal{animation:rise .8s both}.delay{animation-delay:.14s}@keyframes rise{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}@keyframes float{50%{transform:translateY(-9px)}}footer{text-align:center;border-top:1px solid var(--line);padding:24px;color:var(--muted);font-size:13px}
+@media(max-width:600px){nav{flex-wrap:wrap;justify-content:center;padding:13px}.navlinks{width:100%;justify-content:center}.navlinks a{padding:7px 10px;font-size:13px}main{padding:40px 0 50px}.card{padding:22px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
 </head>
 <body>
-  <h1>Wilawan Mahanil</h1>
-  <p>33333333333333</p>
-  <p>22222222222222</p>
-</body>
-</html>
+<nav class="wrap" aria-label="เมนูหลัก"><a class="brand" href="../index.html"><span aria-hidden="true">&lt;/&gt;</span>PHP_7013</a><div class="navlinks"><a href="../index.html">⌂ หน้าหลัก</a><a class="active" href="../index.html#lesson1">Lesson 1</a><a href="https://github.com/WaySpaceOrg/PHP_7013" target="_blank" rel="noopener noreferrer">↗ GitHub</a></div></nav>
+<main class="wrap">
+<header class="reveal"><span class="eyebrow">✦ Lesson 1 / Exercise 01</span><h1>ประวัติส่วนตัว</h1><p class="intro">ตัวอย่างแบบฝึกหัด HTML · ดีไซน์ Creamy Clean ให้เข้ากับหน้าแรกของโปรเจกต์</p></header>
+<article class="card reveal delay" aria-labelledby="profile-title">
+<div class="profile-icon" aria-hidden="true">W</div>
+<h2 id="profile-title">ข้อมูลส่วนตัว</h2>
+<div class="details">
+<p><strong>ชื่อ:</strong> Wilawan Mahanil</p>
+<p>33333333333333</p>
+<p>22222222222222</p>
+</div>
+<div class="actions"><a class="btn" href="../index.html#lesson1">← ย้อนกลับไปยังบทเรียน</a><a class="btn alt" href="ex2.html">แบบฝึกหัดถัดไป →</a></div>
+</article>
+</main>
+<footer>PHP_7013 · WaySpaceOrg · Made for learning ♡</footer>
+</body></html>

@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <title>ร้านกาแฟแมวเหมียว</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fbf5ef"><title>ร้านกาแฟแมวเหมียว | Lesson 1 EX 02</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&family=DM+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#412a20;--muted:#826f64;--peach:#cc8968;--line:#f0dfd3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--ink);background:radial-gradient(ellipse at 10% 12%,#f9dfd2,transparent 38%),radial-gradient(ellipse at 92% 65%,#fae5d8,transparent 40%),#fbf5ef;font-family:Kanit,sans-serif}a{color:inherit;text-decoration:none}a:focus-visible{outline:3px solid var(--peach);outline-offset:4px}.wrap{max-width:1050px;width:calc(100% - 36px);margin:auto}
+nav{position:sticky;top:12px;z-index:5;margin-top:12px;background:#ffffffd6;backdrop-filter:blur(15px);border:1px solid white;border-radius:40px;box-shadow:0 10px 30px #79543b12;padding:15px 26px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font:800 23px 'DM Sans',sans-serif}.brand span{color:#bf805e;margin-right:10px}.navlinks{display:flex;gap:9px;align-items:center}.navlinks a{border-radius:30px;padding:9px 15px;transition:background .2s,transform .2s}.navlinks a:hover{background:#f7e5d8;transform:translateY(-2px)}.navlinks .active{background:#d59572;color:white}
+main{padding:65px 0 70px}.eyebrow{display:inline-block;border-radius:30px;padding:7px 17px;background:#f9dfcc;color:#81523a;font-weight:600}h1{font-size:clamp(32px,5vw,52px);line-height:1.2;margin:18px 0 10px}.intro{color:var(--muted);margin:0 0 30px}.card{border-radius:28px;border:1px solid var(--line);background:#fffdfbdc;box-shadow:0 18px 40px #76503819;padding:clamp(22px,5vw,42px);backdrop-filter:blur(9px)}.logo{width:200px;max-width:100%;height:auto;display:block;margin:0 auto 15px;border-radius:20px}.coffee-icon{width:70px;height:70px;display:grid;place-items:center;border-radius:23px;background:#fbe8dc;font-size:34px;margin:0 auto 12px;animation:float 5s ease-in-out infinite}.center{text-align:center}.tagline{font-size:19px;font-weight:500;margin:8px 0 24px}.photo{display:block;width:100%;max-height:420px;object-fit:cover;border-radius:22px;border:1px solid var(--line);background:#f6e6da}.photo-caption{color:var(--muted);font-size:13px;margin:9px 0 0}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-flex;align-items:center;gap:8px;border-radius:30px;background:linear-gradient(110deg,#e0a17c,#be7957);color:white;padding:12px 21px;box-shadow:0 8px 18px #bf795533;transition:transform .25s,box-shadow .25s}.btn:hover{transform:translateY(-4px);box-shadow:0 14px 25px #bf795544}.btn.alt{background:#fffaf5;border:1px solid #e9d5c8;color:#85553c;box-shadow:none}.reveal{animation:rise .8s both}.delay{animation-delay:.14s}@keyframes rise{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}@keyframes float{50%{transform:translateY(-9px)}}footer{text-align:center;border-top:1px solid var(--line);padding:24px;color:var(--muted);font-size:13px}
+@media(max-width:600px){nav{flex-wrap:wrap;justify-content:center;padding:13px}.navlinks{width:100%;justify-content:center}.navlinks a{padding:7px 10px;font-size:13px}main{padding:40px 0 50px}.card{padding:22px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
 </head>
 <body>
-    <h1>ร้านกาแฟแมวเหมียว</h1>
-
-    <!-- 1. รูปโลโก้ กว้าง 200 -->
-		<img src="logo.png" alt="โลโก้บริษัท" width="200">
-    <p>กาแฟดี แมวน่ารัก เปิดทุกวัน</p>
-
-    <!-- 2. รูปบรรยากาศร้าน -->
-		<img src="https://www.khaosod.co.th/wpapp/uploads/2018/02/59770.jpg" alt="บรรยากาศ1">
-    <!-- 3. ลิงก์ไปหน้าเมนู menu.html -->
-  <a href="menu.html">Menu</a>
-    <!-- 4. ลิงก์ไปแผนที่ https://maps.google.com เปิดแท็บใหม่ -->
-  <a href="https://maps.google.com" target="_blank">เปิดแท็ปใหม่</a>
-</body>
-</html>
+<nav class="wrap" aria-label="เมนูหลัก"><a class="brand" href="../index.html"><span aria-hidden="true">&lt;/&gt;</span>PHP_7013</a><div class="navlinks"><a href="../index.html">⌂ หน้าหลัก</a><a class="active" href="../index.html#lesson1">Lesson 1</a><a href="https://github.com/WaySpaceOrg/PHP_7013" target="_blank" rel="noopener noreferrer">↗ GitHub</a></div></nav>
+<main class="wrap">
+<header class="reveal"><span class="eyebrow">✦ Lesson 1 / Exercise 02</span><h1>ร้านกาแฟแมวเหมียว ☕</h1><p class="intro">แบบฝึกหัด HTML · แสดงรูปภาพและลิงก์ พร้อมดีไซน์ Creamy Clean</p></header>
+<article class="card reveal delay" aria-label="ข้อมูลร้านกาแฟแมวเหมียว">
+<div class="center"><div class="coffee-icon" aria-hidden="true">☕</div><img class="logo" src="logo.png" alt="โลโก้บริษัท" width="200" onerror="this.style.display='none'"><p class="tagline">กาแฟดี แมวน่ารัก เปิดทุกวัน 🐱</p></div>
+<img class="photo" src="https://www.khaosod.co.th/wpapp/uploads/2018/02/59770.jpg" alt="บรรยากาศร้านกาแฟ" loading="lazy"><p class="photo-caption">ภาพบรรยากาศร้าน</p>
+<div class="actions"><a class="btn" href="../index.html#lesson1">← ย้อนกลับไปยังบทเรียน</a><a class="btn alt" href="menu.html">☕ Menu</a><a class="btn alt" href="https://maps.google.com" target="_blank" rel="noopener noreferrer">↗ เปิดแผนที่</a><a class="btn alt" href="ex3.html">แบบฝึกหัดถัดไป →</a></div>
+</article>
+</main>
+<footer>PHP_7013 · WaySpaceOrg · Made for learning ♡</footer>
+</body></html>
